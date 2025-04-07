@@ -725,7 +725,12 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 COMPRESS_ROOT = STATIC_ROOT
 
 # Define a cache
-CACHES = {}
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': 'unique-snowflake',
+    }
+}
 
 # Authentication
 AUTHENTICATION_BACKENDS = (
