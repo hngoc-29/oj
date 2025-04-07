@@ -41,3 +41,4 @@ tmp.sh
 fc_*
 local_urls.py
 celerybeat-schedule.*
+.vercel
