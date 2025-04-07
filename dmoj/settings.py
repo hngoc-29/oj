@@ -27,7 +27,7 @@ SECRET_KEY = '5*9f5q57mqmlz2#f$x1h76&jxy#yortjl1v+l*6hd18$d*yx#0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://oj-1.onrender.com']
+ALLOWED_HOSTS = ['oj-1.onrender.com']
 
 CSRF_FAILURE_VIEW = 'judge.views.widgets.csrf_failure'
 
@@ -789,8 +789,13 @@ ACE_DEFAULT_DARK_THEME = DMOJ_THEME_DEFAULT_ACE_THEME['dark']
 # Only allow OAuth login
 OAUTH_ONLY = False
 
+# Ensure local_settings.py overrides do not conflict
 try:
     with open(os.path.join(os.path.dirname(__file__), 'local_settings.py')) as f:
         exec(f.read(), globals())
 except IOError:
     pass
+
+# Validate database configuration
+if 'default' not in DATABASES or 'ENGINE' not in DATABASES['default']:
+    raise ImproperlyConfigured("The default database is not properly configured.")
