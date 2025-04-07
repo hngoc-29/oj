@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: dmoj
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: dmoj.settings

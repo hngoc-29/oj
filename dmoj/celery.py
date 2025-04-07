@@ -1,9 +1,14 @@
 import logging
 import socket
+import os
+from django.conf import settings
 
 from celery import Celery
 from celery.schedules import crontab
 from celery.signals import task_failure
+
+# Ensure DJANGO_SETTINGS_MODULE is set
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'dmoj.settings')
 
 app = Celery('dmoj')
 
