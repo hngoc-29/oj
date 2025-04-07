@@ -2,7 +2,7 @@
 FROM python:3.9-slim
 
 # Cài đặt các gói hệ thống cần thiết để build các thư viện có C extensions
-RUN apt-get update && apt-get install -y \
+RUN apt-get update --fix-missing && apt-get install -y \
     build-essential \
     libmysqlclient-dev \
     libxml2-dev \
