@@ -3,7 +3,10 @@
 # Set the DJANGO_SETTINGS_MODULE environment variable
 export DJANGO_SETTINGS_MODULE="dmoj.settings"
 
-# Collect static files before starting Gunicorn
+# Apply database migrations
+python manage.py migrate --noinput
+
+# Collect static files
 python manage.py collectstatic --noinput
 
 # Start Gunicorn
