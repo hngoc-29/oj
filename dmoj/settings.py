@@ -718,6 +718,12 @@ STATICFILES_DIRS = [
 ]
 STATIC_URL = '/static/'
 
+# Ensure STATIC_ROOT is defined
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# Define COMPRESS_ROOT
+COMPRESS_ROOT = STATIC_ROOT
+
 # Define a cache
 CACHES = {}
 
