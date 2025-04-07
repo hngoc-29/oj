@@ -4,6 +4,7 @@
 export DJANGO_SETTINGS_MODULE="dmoj.settings"
 
 # Apply database migrations
+python manage.py migrate sites --noinput
 python manage.py migrate --noinput
 
 # Collect static files
