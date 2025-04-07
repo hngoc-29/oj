@@ -1,1 +1,1 @@
-"web: oj.wsgi" 
+"web: dmoj.wsgi" 
