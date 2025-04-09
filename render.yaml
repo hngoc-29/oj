@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: vnoj-web
+    runtime: python
+    buildCommand: |
+      pip install -r requirements.txt
+      python manage.py collectstatic --noinput
+      python manage.py migrate
+    startCommand: |
+      uwsgi --http :$PORT \
+            --module dmoj.wsgi \
+            --env DJANGO_SETTINGS_MODULE=dmoj.settings \
+            --static-map /static=/staticfiles
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: dmoj.settings
