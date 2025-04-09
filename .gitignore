@@ -3,3 +3,8 @@
 
 # Bỏ qua thư mục node_modules
 node_modules/
+
+staticfiles/
+/static
+
+/sass_processed
