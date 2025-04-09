@@ -18,6 +18,7 @@ social-auth-app-django==5.0.0
 pytz
 pymysql
 python-dotenv
+gunicorn==20.1.0
 django-statici18n
 pika
 ua-parser
