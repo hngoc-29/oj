@@ -15,26 +15,24 @@ import os
 from django.utils.translation import gettext_lazy as _
 from django_jinja.builtins import DEFAULT_EXTENSIONS
 from jinja2 import select_autoescape
-
+from dotenv import load_dotenv
+load_dotenv()
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '5*9f5q57mqmlz2#f$x1h76&jxy#yortjl1v+l*6hd18$d*yx#0'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
-ALLOWED_HOSTS = []
-
+DOMAIN = os.environ.get('DOMAIN', 'oj-pb3o.onrender.com')
 CSRF_FAILURE_VIEW = 'judge.views.widgets.csrf_failure'
-
+ALLOWED_HOSTS = [DOMAIN]
+print(f'ALLOWED_HOSTS: {ALLOWED_HOSTS}')
 SITE_ID = 1
 SITE_NAME = 'DMOJ'
 SITE_LONG_NAME = 'DMOJ: Modern Online Judge'
-SITE_ADMIN_EMAIL = ''
+SITE_ADMIN_EMAIL = 'lmtcv1.9@gmail.com'
 
 DMOJ_REQUIRE_STAFF_2FA = True
 # Display warnings that admins will not perform 2FA recovery.
@@ -105,7 +103,7 @@ VNOJ_CONTEST_CHEATING_BAN_MESSAGE = 'Banned for multiple cheating offenses durin
 VNOJ_MAX_DISQUALIFICATIONS_BEFORE_BANNING = 3
 
 # List of subdomain that will be ignored in organization subdomain middleware
-VNOJ_IGNORED_ORGANIZATION_SUBDOMAINS = ['oj', 'www', 'localhost']
+VNOJ_IGNORED_ORGANIZATION_SUBDOMAINS = ['oj', 'www', 'localhost', 'oj-pb3o.onrender.com', DOMAIN]
 
 # Enable organization credit system, if true, org will not be able to submit submissions
 # if they run out of credit
@@ -297,7 +295,7 @@ INLINE_JQUERY = True
 INLINE_FONTAWESOME = True
 JQUERY_JS = '/static/vnoj/jquery/3.4.1/jquery.min.js'
 FONTAWESOME_CSS = '/static/vnoj/font-awesome/4.3.0/css/font-awesome.min.css'
-DMOJ_CANONICAL = 'oj.vnoi.info'
+DMOJ_CANONICAL = DOMAIN
 
 # Application definition
 
@@ -673,23 +671,24 @@ DATABASES = {
 ENABLE_FTS = False
 
 # Balancer configuration
-BALANCER_JUDGE_ADDRESS = [('localhost', 8888)]
+BALANCER_JUDGE_ADDRESS = [(f'{DOMAIN}', 8888)]
 
 # Bridged configuration
-BRIDGED_JUDGE_ADDRESS = [('localhost', 9999)]
+BRIDGED_JUDGE_ADDRESS = [(f'{DOMAIN}', 9999)]
 BRIDGED_JUDGE_PROXIES = None
-BRIDGED_DJANGO_ADDRESS = [('localhost', 9998)]
+BRIDGED_DJANGO_ADDRESS = [(DOMAIN, 9998)]  # Đây là site chính của bạn
 BRIDGED_DJANGO_CONNECT = None
 
 # Event Server configuration
-EVENT_DAEMON_USE = False
-EVENT_DAEMON_POST = 'ws://localhost:9997/'
-EVENT_DAEMON_GET = 'ws://localhost:9996/'
+EVENT_DAEMON_USE = True
+EVENT_DAEMON_POST = f'wss://{DOMAIN}/'
+EVENT_DAEMON_GET = f'wss://{DOMAIN}/'
+
 EVENT_DAEMON_POLL = '/channels/'
 EVENT_DAEMON_KEY = None
 EVENT_DAEMON_AMQP_EXCHANGE = 'dmoj-events'
-EVENT_DAEMON_SUBMISSION_KEY = '6Sdmkx^%pk@GsifDfXcwX*Y7LRF%RGT8vmFpSxFBT$fwS7trc8raWfN#CSfQuKApx&$B#Gh2L7p%W!Ww'
-EVENT_DAEMON_CONTEST_KEY = '&w7hB-.9WnY2Jj^Qm+|?o6a<!}_2Wiw+?(_Yccqq{uR;:kWQP+3R<r(ICc|4^dDeEuJE{*D;Gg@K(4K>'
+EVENT_DAEMON_SUBMISSION_KEY = os.environ.get('EVENT_DAEMON_SUBMISSION_KEY')
+EVENT_DAEMON_CONTEST_KEY = os.environ.get('EVENT_DAEMON_CONTEST_KEY')
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/

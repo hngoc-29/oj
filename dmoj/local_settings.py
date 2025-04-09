@@ -10,10 +10,13 @@
 # SECURITY WARNING: keep the secret key used in production secret!
 # You may use this command to generate a key:
 # python3 -c 'from django.core.management.utils import get_random_secret_key;print(get_random_secret_key())'
-SECRET_KEY = '5*9f5q57mqmlz2#f$x1h76&jxy#yortjl1v+l*6hd18$d*yx#0'
-
+import os
+from dotenv import load_dotenv
+load_dotenv()
+SECRET_KEY = os.environ.get('SECRET_KEY', "your_secret_key")
+DOMAIN = os.environ.get('DOMAIN', 'localhost:8000')
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True  # Change to False once you are done with runserver testing.
+DEBUG = False  # Change to False once you are done with runserver testing.
 
 # Uncomment and set to the domain names this site is intended to serve.
 # You must do this once you set DEBUG to False.
@@ -37,11 +40,11 @@ CACHES = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'defaultdb',
-        'USER': 'avnadmin',
-        'PASSWORD': 'AVNS_EernzBKY4wv_mBNzVFd',
-        'HOST': 'mysql-18080d7f-lmtcv1-590e.k.aivencloud.com',
-        'PORT': '18463',
+        'NAME': os.environ.get('DB_NAME', 'defaultdb'),
+        'USER': os.environ.get('DB_USER', 'avnadmin'),
+        'PASSWORD': os.environ.get('DB_PASSWORD', ''),
+        'HOST': os.environ.get('DB_HOST', 'localhost'),
+        'PORT': os.environ.get('DB_PORT', '3306'),
         'OPTIONS': {
             'charset': 'utf8mb4',
             'sql_mode': 'STRICT_TRANS_TABLES,NO_ENGINE_SUBSTITUTION',
@@ -89,12 +92,12 @@ STATICFILES_FINDERS = [
 
 # The following block is included for your convenience, if you want
 # to use Gmail.
-#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-#EMAIL_USE_TLS = True
-#EMAIL_HOST = 'smtp.gmail.com'
-#EMAIL_HOST_USER = '<your account>@gmail.com'
-#EMAIL_HOST_PASSWORD = '<your password>'
-#EMAIL_PORT = 587
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = os.environ.get('EMAIL_USER', 'hngocverifyemail@gmail.com')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS', 'xrns vsjr mysx nmyq')
+EMAIL_PORT = 587
 
 # To use Mailgun, uncomment this block.
 # You will need to run `pip install django-mailgun-mime` to get `MailgunBackend`.
@@ -144,10 +147,10 @@ SERVER_EMAIL = 'VNOJ: VNOI Online Judge <vnoj@vnoi.info>'
 
 ## DMOJ site display settings.
 SITE_NAME = 'VNOJ'
-SITE_FULL_URL = 'https://oj.vnoi.info'
+SITE_FULL_URL = f'https://{DOMAIN}'
 SITE_LONG_NAME = 'VNOJ: VNOI Online Judge'
-SITE_ADMIN_EMAIL = 'admin@example.com'
-TERMS_OF_SERVICE_URL = '//oj.vnoi.info/tos/'  # Use a flatpage.
+SITE_ADMIN_EMAIL = 'lmtcv1.9@gmail.com'
+TERMS_OF_SERVICE_URL = f"//{DOMAIN}/tos/"  # Use a flatpage.
 
 STATIC_URL = 'static/'
 MEDIA_URL = '/media/'
@@ -167,7 +170,7 @@ DMOJ_PROBLEM_DATA_ROOT = '/tmp/problem_data/'
 # The judge connection address and port; where the judges will connect to the site.
 # You should change this to something your judges can actually connect to
 # (e.g., a port that is unused and unblocked by a firewall).
-BRIDGED_JUDGE_ADDRESS = [('localhost', 9999)]
+BRIDGED_JUDGE_ADDRESS = [(DOMAIN, 9999)]
 
 # The bridged daemon bind address and port to communicate with the site.
 #BRIDGED_DJANGO_ADDRESS = [('localhost', 9998)]
