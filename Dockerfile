@@ -1,37 +1,37 @@
-FROM python:3.12
+# Stage 1: Build Python environment
+FROM python:3.12-slim AS base
 
-# Không ghi bytecode và flush stdout ngay lập tức
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
-
-# Tạo thư mục làm việc
-WORKDIR /app
-
-# Copy requirements và cài hệ thống + Python packages
-COPY requirements.txt .
 
 RUN apt-get update && apt-get install -y \
     gcc g++ make \
     libmariadb-dev \
     libxml2-dev libxslt1-dev zlib1g-dev \
     gettext \
+    nginx \
+    uwsgi \
+    uwsgi-plugin-python3 \
     curl \
-    redis-server \
-    pkg-config \
     python3-dev \
     python3-venv \
-    && pip install --upgrade pip \
-    && pip install -r requirements.txt
+    && rm -rf /var/lib/apt/lists/*
 
-# Cài Node.js v18 (LƯU Ý: bỏ sudo)
-RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
-    && apt-get install -y nodejs
+# Set work directory
+WORKDIR /app
 
-# Copy toàn bộ project vào container
+# Copy and install dependencies
+COPY requirements.txt .
+RUN pip install --upgrade pip && pip install -r requirements.txt
+
+# Copy app code
 COPY . .
 
-# Nếu có frontend cần build, chạy tại đây (nếu không có package.json thì comment lại dòng này)
-# RUN npm install && npm run build
+# Copy nginx config
+COPY nginx/oj.conf /etc/nginx/conf.d/default.conf
 
-# Chạy uwsgi server
-CMD ["uwsgi", "--http", ":10000", "--module", "dmoj.wsgi:application", "--static-map", "/static=/app/static"]
+# Copy uwsgi config
+COPY uwsgi.ini /app/uwsgi.ini
+
+# Run both nginx + uwsgi
+CMD service nginx start && uwsgi --ini /app/uwsgi.ini
