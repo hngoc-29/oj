@@ -25,10 +25,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # SECURITY WARNING: keep the secret key used in production secret!
 
 
-DOMAIN = os.environ.get('DOMAIN', 'oj-pb3o.onrender.com')
+DOMAIN = os.environ.get('DOMAIN', 'localhost')
 CSRF_FAILURE_VIEW = 'judge.views.widgets.csrf_failure'
-ALLOWED_HOSTS = [DOMAIN]
-print(f'ALLOWED_HOSTS: {ALLOWED_HOSTS}')
 SITE_ID = 1
 SITE_NAME = 'DMOJ'
 SITE_LONG_NAME = 'DMOJ: Modern Online Judge'
@@ -674,7 +672,6 @@ ENABLE_FTS = False
 BALANCER_JUDGE_ADDRESS = [(f'{DOMAIN}', 8888)]
 
 # Bridged configuration
-BRIDGED_JUDGE_ADDRESS = [(f'{DOMAIN}', 9999)]
 BRIDGED_JUDGE_PROXIES = None
 BRIDGED_DJANGO_ADDRESS = [(DOMAIN, 9998)]  # Đây là site chính của bạn
 BRIDGED_DJANGO_CONNECT = None

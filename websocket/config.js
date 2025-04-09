@@ -1,10 +1,10 @@
 const config = {
-    get_host: 'ws-oj-pb3o.onrender.com',
-    get_port: 443,  // Render dùng HTTPS/WSS, cổng mặc định là 443
-    post_host: 'ws-oj-pb3o.onrender.com',
-    post_port: 443,
-    http_host: 'oj-pb3o.onrender.com',
-    http_port: 443,
+    get_host: '127.0.0.1',
+    get_port: 15100,
+    post_host: '127.0.0.1',
+    post_port: 15101,
+    http_host: '127.0.0.1',
+    http_port: 15102,
     long_poll_timeout: 29000
 };
 
