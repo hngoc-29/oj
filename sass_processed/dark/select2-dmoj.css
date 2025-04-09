@@ -78,7 +78,6 @@
 }
 
 .select2-container--dmoj .select2-selection--multiple .select2-selection__rendered {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   list-style: none;
@@ -177,7 +176,6 @@
   background: transparent;
   border: none;
   outline: 0;
-  -webkit-box-shadow: none;
   box-shadow: none;
   color: #f8f8f8;
   -webkit-appearance: textfield;

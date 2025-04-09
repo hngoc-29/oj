@@ -261,8 +261,6 @@ form .martor-preview h5 {
 }
 
 .section-martor .martor-toolbar {
-  -webkit-box-flex: 0 !important;
-  -webkit-flex: 0 1 auto !important;
   -moz-box-flex: 0 !important;
   flex: 0 1 auto !important;
   overflow-x: auto;

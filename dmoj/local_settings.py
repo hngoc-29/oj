@@ -112,7 +112,7 @@ STATICFILES_FINDERS = [
 # A tuple of (name, email) pairs that specifies those who will be mailed
 # when the server experiences an error when DEBUG = False.
 ADMINS = (
-    ('Your Name', 'your.email@example.com'),
+    ('hngoc', 'lmtcv1.9@gmail.com'),
 )
 
 # The sender for the aforementioned emails.
