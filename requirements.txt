@@ -33,6 +33,8 @@ packaging<22
 celery
 ansi2html @ git+https://github.com/DMOJ/ansi2html.git
 sqlparse
+websocket-client
+uwsgi
 lupa
 martor @ git+https://github.com/VNOI-Admin/martor.git
 netaddr
@@ -42,5 +44,7 @@ markdown2 @ git+https://github.com/VNOI-Admin/python-markdown2.git
 discord-webhook
 django-admin-sortable2<2
 icalendar
+setuptools
+lxml-html-clean
 # This is a celery dependency whose latest major version is breaking everything.
 importlib-metadata<5

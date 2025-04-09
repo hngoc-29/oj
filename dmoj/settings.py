@@ -709,10 +709,10 @@ SESSION_ENGINE = 'django.contrib.sessions.backends.cached_db'
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 DMOJ_RESOURCES = os.path.join(BASE_DIR, 'resources')
-STATICFILES_FINDERS = (
-    'django.contrib.staticfiles.finders.FileSystemFinder',
-    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-)
+# STATICFILES_FINDERS = (
+#     'django.contrib.staticfiles.finders.FileSystemFinder',
+#     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+# )
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'resources'),
 ]
@@ -777,7 +777,6 @@ ACE_DEFAULT_LIGHT_THEME = DMOJ_THEME_DEFAULT_ACE_THEME['light']
 ACE_DEFAULT_DARK_THEME = DMOJ_THEME_DEFAULT_ACE_THEME['dark']
 # Only allow OAuth login
 OAUTH_ONLY = False
-
 try:
     with open(os.path.join(os.path.dirname(__file__), 'local_settings.py')) as f:
         exec(f.read(), globals())
