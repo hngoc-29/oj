@@ -8,7 +8,7 @@ WORKDIR /app
 COPY requirements.txt .
 
 RUN apt update && apt install -y gcc python3-dev libmariadb-dev g++ make python3-pip python3-venv libxml2-dev libxslt1-dev zlib1g-dev gettext curl redis-server pkg-config \
-    && pip install -r requirements.txt && apt install nodejs && npm i
+    && pip install -r requirements.txt && curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash - && apt install nodejs && npm i
 
 COPY . .
 
