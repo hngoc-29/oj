@@ -1,10 +1,10 @@
 const config = {
-    get_host: '127.0.0.1',
-    get_port: 15100,
-    post_host: '127.0.0.1',
-    post_port: 15101,
-    http_host: '127.0.0.1',
-    http_port: 15102,
+    get_host: 'ws-oj-thpt.onrender.com',
+    get_port: 443, // Render dùng WSS (WebSocket Secure), cổng mặc định là 443
+    post_host: 'ws-oj-thpt.onrender.com',
+    post_port: 443,
+    http_host: 'oj-thpt.onrender.com',
+    http_port: 443,
     long_poll_timeout: 29000
 };
 
