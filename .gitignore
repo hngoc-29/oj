@@ -9,7 +9,6 @@
 *.swp
 dmoj-site.pid
 dmoj-site.sock
-uwsgi.ini
 .fuse_hidden*
 resources/dark
 resources/martor-description.css
