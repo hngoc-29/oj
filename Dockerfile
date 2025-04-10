@@ -1,48 +1,54 @@
-FROM python:3.11-slim
+# Image base
+FROM python:3.10-slim
 
-# Cài system packages
+# Install dependencies
 RUN apt-get update && apt-get install -y \
     git gcc g++ make python3-dev python3-pip python3-venv \
-    libxml2-dev libxslt1-dev zlib1g-dev gettext curl \
-    redis-server pkg-config supervisor nginx gnupg \
-    default-libmysqlclient-dev
+    libxml2-dev libxslt1-dev zlib1g-dev gettext \
+    redis-server pkg-config supervisor nginx curl gnupg \
+    default-libmysqlclient-dev nodejs npm \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
-# Cài Node.js 18
-RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
-    apt-get install -y nodejs
-
-# Tạo thư mục làm việc
+# Setup working directory
 WORKDIR /app
 
-# Copy toàn bộ mã nguồn vào image
+# Copy project files
 COPY . /app
 
-# Cài Python dependencies
-RUN pip install --upgrade pip && \
-    pip install -r requirements.txt
+# Create venv
+RUN python3 -m venv /app/venv
+ENV PATH="/app/venv/bin:$PATH"
 
-# Cài Node dependencies
-RUN npm install
+# Install Python packages
+RUN pip install --upgrade pip \
+    && pip install -r requirements.txt
 
-# Build frontend styles
-RUN chmod +x ./make_style.sh && ./make_style.sh
+# Install Node dependencies & build static
+RUN npm install \
+    && chmod +x ./make_style.sh \
+    && ./make_style.sh \
+    && python manage.py collectstatic --noinput \
+    && python manage.py compilemessages \
+    && python manage.py compilejsi18n
 
-# Collect static files
-RUN python manage.py collectstatic --noinput
+# Create folders needed
+RUN mkdir -p /app/static /app/media /run/nginx /var/log/supervisor
 
-# Compile message files
-RUN python manage.py compilemessages
+# Copy nginx & supervisor configs (assumes you put conf files in root)
+COPY site.conf /etc/nginx/sites-available/site
+RUN ln -s /etc/nginx/sites-available/site /etc/nginx/sites-enabled/site
 
-# Compile JS i18n (nếu cần)
-RUN python manage.py compilejsi18n
-
-# Copy các file cấu hình supervisor
 COPY site.conf /etc/supervisor/conf.d/site.conf
 COPY bridged.conf /etc/supervisor/conf.d/bridged.conf
 COPY celery.conf /etc/supervisor/conf.d/celery.conf
 
-# Expose các cổng cần thiết
-EXPOSE 80 9996 9997 9998 9999
+# ENV for Render
+ENV PORT=10000
+EXPOSE 10000
 
-# Start supervisor
+# Replace default nginx port
+RUN sed -i "s/listen .*;/listen ${PORT};/" /etc/nginx/sites-available/site
+
+# Start all via supervisord
 CMD ["/usr/bin/supervisord", "-n"]
