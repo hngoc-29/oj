@@ -4,7 +4,7 @@ FROM python:3.11-slim
 RUN apt-get update && apt-get install -y \
     git gcc g++ make python3-dev python3-pip python3-venv \
     libxml2-dev libxslt1-dev zlib1g-dev gettext curl \
-    redis-server pkg-config supervisor nginx gnupg
+    redis-server pkg-config supervisor nginx gnupg libmysqlclient-dev
 
 # Cài Node.js 18
 RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
@@ -33,7 +33,7 @@ RUN python manage.py collectstatic --noinput
 RUN python manage.py compilemessages
 
 # Compile JS i18n (nếu cần)
-RUN python manage.py compilejsi18n || true
+RUN python manage.py compilejsi18n
 
 # Copy các file cấu hình supervisor
 COPY site.conf /etc/supervisor/conf.d/site.conf
