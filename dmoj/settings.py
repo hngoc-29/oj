@@ -439,7 +439,10 @@ MIDDLEWARE = (
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
     'judge.social_auth.SocialAuthExceptionMiddleware',
     'django.contrib.redirects.middleware.RedirectFallbackMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 )
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 IMPERSONATE_REQUIRE_SUPERUSER = True
 IMPERSONATE_DISABLE_LOGGING = True
@@ -773,8 +776,9 @@ ACE_DEFAULT_LIGHT_THEME = DMOJ_THEME_DEFAULT_ACE_THEME['light']
 ACE_DEFAULT_DARK_THEME = DMOJ_THEME_DEFAULT_ACE_THEME['dark']
 # Only allow OAuth login
 OAUTH_ONLY = False
+# Cuối file dmoj/settings.py — thay thế đoạn exec() cũ bằng đoạn này
 try:
-    with open(os.path.join(os.path.dirname(__file__), 'local_settings.py')) as f:
-        exec(f.read(), globals())
-except IOError:
+    from .local_settings import *
+except ImportError:
     pass
+

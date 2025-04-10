@@ -12,7 +12,8 @@
 # python3 -c 'from django.core.management.utils import get_random_secret_key;print(get_random_secret_key())'
 import os
 from dotenv import load_dotenv
-load_dotenv()
+os.environ['DJANGO_SETTINGS_MODULE'] = 'dmoj.settings'
+# load_dotenv()
 SECRET_KEY = os.environ.get('SECRET_KEY', "your_secret_key")
 DOMAIN = os.environ.get('DOMAIN', 'localhost:8000')
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -79,6 +80,7 @@ STATICFILES_FINDERS = [
     'compressor.finders.CompressorFinder',
 ]
 
+# DJANGO_SETTINGS_MODULE=dmoj.settings
 
 #########################################
 ########## Email configuration ##########
