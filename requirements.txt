@@ -25,6 +25,7 @@ pika
 ua-parser
 pyyaml
 jinja2
+uvicorn
 django_jinja>=2.5.0
 llist
 whitenoise
