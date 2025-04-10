@@ -4,7 +4,8 @@ FROM python:3.11-slim
 RUN apt-get update && apt-get install -y \
     git gcc g++ make python3-dev python3-pip python3-venv \
     libxml2-dev libxslt1-dev zlib1g-dev gettext curl \
-    redis-server pkg-config supervisor nginx gnupg libmysqlclient-dev
+    redis-server pkg-config supervisor nginx gnupg \
+    default-libmysqlclient-dev
 
 # Cài Node.js 18
 RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
