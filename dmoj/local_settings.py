@@ -13,11 +13,11 @@
 SECRET_KEY = '5*9f5q57mqmlz2#f$x1h76&jxy#yortjl1v+l*6hd18$d*yx#0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False  # Change to False once you are done with runserver testing.
+DEBUG = True  # Change to False once you are done with runserver testing.
 
 # Uncomment and set to the domain names this site is intended to serve.
 # You must do this once you set DEBUG to False.
-ALLOWED_HOSTS = ['localhost', 'localhost:80', '127.0.0.1', '127.0.0.1:80', 'oj-thpt.onrender.com']
+# ALLOWED_HOSTS = ['localhost', 'localhost:80', '127.0.0.1', '127.0.0.1:80', 'oj-thpt.onrender.com']
 
 # Optional apps that DMOJ can make use of.
 INSTALLED_APPS += (
@@ -123,7 +123,7 @@ SERVER_EMAIL = 'VNOJ: VNOI Online Judge <vnoj@vnoi.info>'
 # webserver to serve the static files. This is the directory where all the
 # static files DMOJ uses will be collected to.
 # You must configure your webserver to serve this directory as /static/ in production.
-STATIC_ROOT = '/app/static'
+STATIC_ROOT = '/workspaces/oj/static'
 
 # URL to access static files.
 #STATIC_URL = '/static/'
