@@ -25,4 +25,3 @@ echo "🛠️ Collect static và dịch messages..."
 python manage.py collectstatic --noinput
 python manage.py compilemessages
 python manage.py compilejsi18n
-tatus
