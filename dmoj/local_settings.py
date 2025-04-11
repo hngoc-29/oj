@@ -13,7 +13,7 @@
 SECRET_KEY = '5*9f5q57mqmlz2#f$x1h76&jxy#yortjl1v+l*6hd18$d*yx#0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True  # Change to False once you are done with runserver testing.
+DEBUG = False  # Change to False once you are done with runserver testing.
 
 # Uncomment and set to the domain names this site is intended to serve.
 # You must do this once you set DEBUG to False.
@@ -84,12 +84,12 @@ STATICFILES_FINDERS += ('compressor.finders.CompressorFinder',)
 
 # The following block is included for your convenience, if you want
 # to use Gmail.
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_USE_TLS = True
-# EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_HOST_USER = 'hngocverifyemail@gmail.com'
-# EMAIL_HOST_PASSWORD = 'xrns vsjr mysx nmyq'
-# EMAIL_PORT = 587
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'hngocverifyemail@gmail.com'
+EMAIL_HOST_PASSWORD = 'xrns vsjr mysx nmyq'
+EMAIL_PORT = 587
 
 # To use Mailgun, uncomment this block.
 # You will need to run `pip install django-mailgun-mime` to get `MailgunBackend`.
@@ -111,7 +111,7 @@ ADMINS = (
 )
 
 # The sender for the aforementioned emails.
-SERVER_EMAIL = 'VNOJ: VNOI Online Judge <vnoj@vnoi.info>'
+SERVER_EMAIL = 'VNOJ: VNOI Online Judge'
 
 
 ################################################
@@ -147,7 +147,7 @@ TERMS_OF_SERVICE_URL = '//oj-thpt.onrender.com/tos/'  # Use a flatpage.
 # This is the directory where all the media files are stored.
 # Change this to somewhere more permanent.
 # You must configure your webserver to serve this directory in production.
-MEDIA_ROOT = '/media'
+
 
 ## Problem data settings.
 # This is the directory where all the problem data are stored.

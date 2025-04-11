@@ -1,0 +1,20 @@
+/workspaces/oj/vnojsite/lib/python3.12/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+WARNING 2025-04-11 11:34:25,393 warnings /workspaces/oj/vnojsite/lib/python3.12/site-packages/celery/app/utils.py:203: CDeprecationWarning: 
+    The 'CELERY_TIMEZONE' setting is deprecated and scheduled for removal in
+    version 6.0.0. Use the timezone instead
+
+  deprecated.warn(description=f'The {setting!r} setting',
+
+WARNING 2025-04-11 11:34:25,393 worker Please run `celery upgrade settings path/to/settings.py` to avoid these warnings and to allow a smoother upgrade to Celery 6.0.
+WARNING 2025-04-11 11:34:26,898 warnings /workspaces/oj/vnojsite/lib/python3.12/site-packages/celery/app/control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@codespaces-920145.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+

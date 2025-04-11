@@ -1,0 +1,33 @@
+2025-04-11 10:13:48,365 INFO daemonizing the supervisord process
+2025-04-11 10:13:48,365 INFO set current directory: '/workspaces/oj/conf/../'
+2025-04-11 10:13:48,365 INFO supervisord started with pid 113793
+2025-04-11 10:14:45,189 INFO daemonizing the supervisord process
+2025-04-11 10:14:45,189 INFO set current directory: '/workspaces/oj/conf/../'
+2025-04-11 10:14:45,190 INFO supervisord started with pid 114347
+2025-04-11 10:15:10,634 INFO daemonizing the supervisord process
+2025-04-11 10:15:10,634 INFO set current directory: '/workspaces/oj/conf/../'
+2025-04-11 10:15:10,635 INFO supervisord started with pid 114622
+2025-04-11 10:15:36,313 INFO daemonizing the supervisord process
+2025-04-11 10:15:36,314 INFO supervisord started with pid 114873
+2025-04-11 10:16:47,993 INFO daemonizing the supervisord process
+2025-04-11 10:16:47,993 INFO set current directory: '/workspaces/oj/conf/../'
+2025-04-11 10:16:47,994 INFO supervisord started with pid 115482
+2025-04-11 10:22:18,389 INFO daemonizing the supervisord process
+2025-04-11 10:22:18,390 INFO supervisord started with pid 118137
+2025-04-11 10:30:13,988 INFO daemonizing the supervisord process
+2025-04-11 10:30:13,988 INFO set current directory: '/workspaces/oj/conf/../'
+2025-04-11 10:30:13,989 INFO supervisord started with pid 121837
+2025-04-11 10:50:23,312 INFO daemonizing the supervisord process
+2025-04-11 10:50:23,313 INFO set current directory: '/workspaces/oj/conf/../'
+2025-04-11 10:50:23,313 INFO supervisord started with pid 130969
+2025-04-11 10:51:01,188 INFO daemonizing the supervisord process
+2025-04-11 10:51:01,189 INFO supervisord started with pid 131290
+2025-04-11 10:57:22,120 WARN received SIGTERM indicating exit request
+2025-04-11 10:57:22,333 WARN received SIGTERM indicating exit request
+2025-04-11 10:57:22,589 WARN received SIGTERM indicating exit request
+2025-04-11 10:57:22,589 WARN received SIGTERM indicating exit request
+2025-04-11 10:57:22,589 WARN received SIGTERM indicating exit request
+2025-04-11 10:57:22,703 WARN received SIGTERM indicating exit request
+2025-04-11 10:57:22,755 WARN received SIGTERM indicating exit request
+2025-04-11 10:57:22,905 WARN received SIGTERM indicating exit request
+2025-04-11 10:57:22,967 WARN received SIGTERM indicating exit request

@@ -1,0 +1,16 @@
+ 
+ -------------- celery@codespaces-920145 v5.5.1 (immunity)
+--- ***** ----- 
+-- ******* ---- Linux-6.8.0-1021-azure-x86_64-with-glibc2.31 2025-04-11 11:34:25
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         dmoj:0x72e0598655e0
+- ** ---------- .> transport:   redis://localhost:6379//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 2 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
