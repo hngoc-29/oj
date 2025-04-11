@@ -112,3 +112,45 @@ Trying again in 32.00 seconds... (16/100)
 ERROR 2025-04-11 13:50:08,979 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
 Trying again in 16.00 seconds... (8/100)
 
+ERROR 2025-04-11 13:50:24,988 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 18.00 seconds... (9/100)
+
+ERROR 2025-04-11 13:50:36,600 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+ERROR 2025-04-11 13:50:42,996 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 20.00 seconds... (10/100)
+
+ERROR 2025-04-11 13:51:03,011 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 22.00 seconds... (11/100)
+
+ERROR 2025-04-11 13:51:08,621 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+ERROR 2025-04-11 13:51:25,020 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 24.00 seconds... (12/100)
+
+ERROR 2025-04-11 13:51:40,639 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+ERROR 2025-04-11 13:51:49,041 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 26.00 seconds... (13/100)
+
+ERROR 2025-04-11 13:52:12,661 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+ERROR 2025-04-11 13:52:15,059 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 28.00 seconds... (14/100)
+
+ERROR 2025-04-11 13:52:43,075 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 30.00 seconds... (15/100)
+
+ERROR 2025-04-11 13:52:44,694 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+ERROR 2025-04-11 13:53:13,101 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+ERROR 2025-04-11 13:53:16,717 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
