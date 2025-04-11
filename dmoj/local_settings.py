@@ -123,7 +123,7 @@ SERVER_EMAIL = 'VNOJ: VNOI Online Judge <vnoj@vnoi.info>'
 # webserver to serve the static files. This is the directory where all the
 # static files DMOJ uses will be collected to.
 # You must configure your webserver to serve this directory as /static/ in production.
-STATIC_ROOT = '/app/static'
+STATIC_ROOT = '/staticfiles'
 
 # URL to access static files.
 #STATIC_URL = '/static/'
