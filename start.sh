@@ -12,3 +12,11 @@ echo "🚀 Khởi động supervisord..."
 supervisord -c conf/supervisord.conf
 
 # Không chạy nginx, Render sẽ gọi PORT trực tiếp tới uWSGI (qua uwsgi.ini)
+echo "🧩 Trạng thái services:"
+./vnojsite/bin/supervisorctl -c conf/supervisord.conf status
+
+echo "🚀 Khởi động nginx..."
+/usr/sbin/nginx -t
+/usr/sbin/nginx -c /workspaces/vnoj/conf/nginx.conf -g 'daemon off;'
+
+echo "Render is using PORT=$PORT"
