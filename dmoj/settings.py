@@ -716,6 +716,7 @@ STATICFILES_FINDERS = (
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'resources'),
 ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
 # Define a cache
