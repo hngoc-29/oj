@@ -2,7 +2,7 @@
 set -e
 
 # Kích hoạt virtualenv
-source vnojsite/bin/activate
+source ./vnojsite/bin/activate
 
 echo "🧹 Dọn dẹp file cũ..."
 mkdir -p tmp
