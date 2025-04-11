@@ -314,3 +314,130 @@
 2025-04-11 11:39:54,385 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2025-04-11 11:39:59,109 INFO exited: bridged (exit status 1; not expected)
 2025-04-11 11:40:00,111 INFO spawned: 'bridged' with pid 160373
+2025-04-11 11:40:01,112 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:40:04,921 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:40:05,928 INFO spawned: 'bridged' with pid 160438
+2025-04-11 11:40:06,935 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:40:10,606 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:40:11,609 INFO spawned: 'bridged' with pid 160546
+2025-04-11 11:40:12,613 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:40:17,684 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:40:18,692 INFO spawned: 'bridged' with pid 160655
+2025-04-11 11:40:19,694 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:40:25,871 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:40:26,873 INFO spawned: 'bridged' with pid 161297
+2025-04-11 11:40:27,876 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:40:29,662 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:40:30,665 INFO spawned: 'bridged' with pid 161314
+2025-04-11 11:40:31,666 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:40:34,066 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:40:35,069 INFO spawned: 'bridged' with pid 161343
+2025-04-11 11:40:36,072 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:40:38,229 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:40:39,233 INFO spawned: 'bridged' with pid 161384
+2025-04-11 11:40:40,237 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:40:41,773 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:40:42,776 INFO spawned: 'bridged' with pid 161457
+2025-04-11 11:40:43,778 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:40:45,598 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:40:46,601 INFO spawned: 'bridged' with pid 161514
+2025-04-11 11:40:47,608 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:40:49,409 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:40:50,411 INFO spawned: 'bridged' with pid 161579
+2025-04-11 11:40:51,413 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:40:52,891 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:40:53,894 INFO spawned: 'bridged' with pid 161590
+2025-04-11 11:40:54,896 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:40:56,842 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:40:57,844 INFO spawned: 'bridged' with pid 161663
+2025-04-11 11:40:58,846 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:41:00,512 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:41:01,515 INFO spawned: 'bridged' with pid 161711
+2025-04-11 11:41:02,516 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:41:03,915 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:41:04,918 INFO spawned: 'bridged' with pid 161728
+2025-04-11 11:41:05,919 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:41:07,575 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:41:08,577 INFO spawned: 'bridged' with pid 161795
+2025-04-11 11:41:09,579 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:41:11,114 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:41:12,117 INFO spawned: 'bridged' with pid 161843
+2025-04-11 11:41:13,118 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:41:14,588 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:41:15,591 INFO spawned: 'bridged' with pid 161892
+2025-04-11 11:41:16,595 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:41:18,264 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:41:19,266 INFO spawned: 'bridged' with pid 161931
+2025-04-11 11:41:20,268 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:41:21,690 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:41:22,692 INFO spawned: 'bridged' with pid 161979
+2025-04-11 11:41:23,693 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:41:25,183 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:41:26,185 INFO spawned: 'bridged' with pid 162021
+2025-04-11 11:41:27,186 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:41:28,850 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:41:29,853 INFO spawned: 'bridged' with pid 162067
+2025-04-11 11:41:30,855 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:41:32,312 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:41:33,314 INFO spawned: 'bridged' with pid 162103
+2025-04-11 11:41:34,316 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:41:35,819 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:41:36,822 INFO spawned: 'bridged' with pid 162158
+2025-04-11 11:41:37,824 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:41:39,293 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:41:40,295 INFO spawned: 'bridged' with pid 162198
+2025-04-11 11:41:41,297 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:41:42,693 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:41:43,696 INFO spawned: 'bridged' with pid 162241
+2025-04-11 11:41:44,697 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:41:46,100 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:41:47,103 INFO spawned: 'bridged' with pid 162289
+2025-04-11 11:41:48,104 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:41:49,528 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:41:50,530 INFO spawned: 'bridged' with pid 162335
+2025-04-11 11:41:51,532 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:41:52,965 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:41:53,968 INFO spawned: 'bridged' with pid 162378
+2025-04-11 11:41:54,970 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:41:56,437 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:41:57,440 INFO spawned: 'bridged' with pid 162426
+2025-04-11 11:41:58,440 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:41:59,864 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:42:00,867 INFO spawned: 'bridged' with pid 162467
+2025-04-11 11:42:01,869 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:42:03,611 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:42:04,614 INFO spawned: 'bridged' with pid 162541
+2025-04-11 11:42:05,616 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:42:08,178 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:42:09,199 INFO spawned: 'bridged' with pid 162642
+2025-04-11 11:42:10,201 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:42:11,666 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:42:12,669 INFO spawned: 'bridged' with pid 162695
+2025-04-11 11:42:13,670 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:42:15,055 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:42:16,057 INFO spawned: 'bridged' with pid 162717
+2025-04-11 11:42:17,059 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:42:18,481 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:42:19,484 INFO spawned: 'bridged' with pid 162789
+2025-04-11 11:42:20,486 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:42:21,845 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:42:22,848 INFO spawned: 'bridged' with pid 162832
+2025-04-11 11:42:23,849 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:42:25,439 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:42:26,442 INFO spawned: 'bridged' with pid 162854
+2025-04-11 11:42:27,443 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:42:28,967 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:42:29,969 INFO spawned: 'bridged' with pid 162927
+2025-04-11 11:42:30,971 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:42:32,394 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:42:33,397 INFO spawned: 'bridged' with pid 162969
+2025-04-11 11:42:34,399 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:42:35,967 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:42:36,970 INFO spawned: 'bridged' with pid 162998
+2025-04-11 11:42:37,970 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:42:39,618 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:42:40,621 INFO spawned: 'bridged' with pid 163068
+2025-04-11 11:42:41,622 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-11 11:42:43,417 INFO exited: bridged (exit status 1; not expected)
+2025-04-11 11:42:44,419 INFO spawned: 'bridged' with pid 163117
+2025-04-11 11:42:45,421 INFO success: bridged entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
