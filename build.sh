@@ -14,7 +14,7 @@ apt-get update && apt-get install -y \
 rm -rf vnojsite
 
 python3 -m venv vnojsite
-. vnojsite/bin/activate
+./vnojsite/bin/supervisord -c conf/supervisord.conf
 
 pip install --upgrade pip setuptools wheel
 # Nâng cấp pip và cài requirements
