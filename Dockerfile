@@ -36,7 +36,7 @@ RUN npm install \
 RUN mkdir -p /app/static /app/media /run/nginx /var/log/supervisor
 
 # Copy Nginx config
-COPY app/nginx/default.conf /etc/nginx/sites-available/site
+COPY nginx/default.conf /etc/nginx/sites-available/site
 RUN ln -sf /etc/nginx/sites-available/site /etc/nginx/sites-enabled/site
 
 # Test Nginx config
