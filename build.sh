@@ -25,7 +25,4 @@ echo "🛠️ Collect static và dịch messages..."
 python manage.py collectstatic --noinput
 python manage.py compilemessages
 python manage.py compilejsi18n
-
-echo "🚀 Khởi động supervisord..."
-./vnojsite/bin/supervisord -c conf/supervisord.conf
-./vnojsite/bin/supervisorctl -c conf/supervisord.conf status
+tatus
