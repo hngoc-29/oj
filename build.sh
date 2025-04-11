@@ -37,3 +37,4 @@ rm -f tmp/*.pid tmp/*.sock tmp/*.log
 
 echo "🚀 Khởi động supervisord..."
 sudo supervisord -c conf/supervisord.conf
+sudo supervisorctl -c conf/supervisord.conf status

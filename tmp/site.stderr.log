@@ -1,5 +1,5 @@
 [uWSGI] getting INI configuration from /workspaces/oj/conf/../uwsgi.ini
-*** Starting uWSGI 2.0.28 (64bit) on [Fri Apr 11 11:34:20 2025] ***
+*** Starting uWSGI 2.0.28 (64bit) on [Fri Apr 11 13:43:48 2025] ***
 compiled with version: 9.4.0 on 11 April 2025 11:33:10
 os: Linux-6.8.0-1021-azure #25~22.04.1-Ubuntu SMP Thu Jan 16 21:37:09 UTC 2025
 nodename: codespaces-920145
@@ -23,7 +23,7 @@ uWSGI running as root, you can use --uid/--gid/--chroot options
 Python version: 3.12.1 (main, Mar 17 2025, 17:13:06) [GCC 9.4.0]
 PEP 405 virtualenv detected: ./vnojsite
 Set PythonHome to ./vnojsite
-Python main interpreter initialized at 0x59b4a6eadde8
+Python main interpreter initialized at 0x5de0b72f2de8
 uWSGI running as root, you can use --uid/--gid/--chroot options
 *** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
 python threads support enabled
@@ -32,15 +32,15 @@ your mercy for graceful operations on workers is 60 seconds
 mapped 583360 bytes (569 KB) for 7 cores
 *** Operational MODE: preforking ***
 added .// to pythonpath.
-WSGI app 0 (mountpoint='') ready in 8 seconds on interpreter 0x59b4a6eadde8 pid: 156724 (default app)
+WSGI app 0 (mountpoint='') ready in 13 seconds on interpreter 0x5de0b72f2de8 pid: 45517 (default app)
 uWSGI running as root, you can use --uid/--gid/--chroot options
 *** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
 *** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 156724)
-spawned uWSGI worker 1 (pid: 156815, cores: 1)
-spawned uWSGI worker 2 (pid: 156820, cores: 1)
-spawned uWSGI worker 3 (pid: 156822, cores: 1)
-spawned uWSGI worker 4 (pid: 156823, cores: 1)
-spawned uWSGI worker 5 (pid: 156824, cores: 1)
-spawned uWSGI worker 6 (pid: 156825, cores: 1)
-spawned uWSGI worker 7 (pid: 156826, cores: 1)
+spawned uWSGI master process (pid: 45517)
+spawned uWSGI worker 1 (pid: 45681, cores: 1)
+spawned uWSGI worker 2 (pid: 45682, cores: 1)
+spawned uWSGI worker 3 (pid: 45683, cores: 1)
+spawned uWSGI worker 4 (pid: 45684, cores: 1)
+spawned uWSGI worker 5 (pid: 45685, cores: 1)
+spawned uWSGI worker 6 (pid: 45686, cores: 1)
+spawned uWSGI worker 7 (pid: 45687, cores: 1)

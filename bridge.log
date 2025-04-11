@@ -4,3 +4,12 @@ INFO 2025-04-11 11:09:04,853 daemon Exiting due to SIGINT
 INFO 2025-04-11 11:09:45,008 daemon Exiting due to SIGINT
 INFO 2025-04-11 11:13:00,812 daemon Exiting due to SIGINT
 INFO 2025-04-11 11:13:30,686 daemon Exiting due to SIGINT
+INFO 2025-04-11 12:37:20,375 base_handler Disconnecting client due to too-large message size (1195725856 bytes): ('127.0.0.1', 35158)
+INFO 2025-04-11 12:37:20,383 base_handler Disconnecting client due to too-large message size (1195725856 bytes): ('127.0.0.1', 35162)
+INFO 2025-04-11 12:37:20,391 base_handler Disconnecting client due to too-large message size (1195725856 bytes): ('127.0.0.1', 35166)
+INFO 2025-04-11 12:37:20,398 base_handler Disconnecting client due to too-large message size (1195725856 bytes): ('127.0.0.1', 35170)
+INFO 2025-04-11 12:37:30,885 base_handler Disconnecting client due to too-large message size (1195725856 bytes): ('127.0.0.1', 33928)
+INFO 2025-04-11 12:37:30,894 base_handler Disconnecting client due to too-large message size (1195725856 bytes): ('127.0.0.1', 33938)
+INFO 2025-04-11 12:37:30,901 base_handler Disconnecting client due to too-large message size (1195725856 bytes): ('127.0.0.1', 33952)
+INFO 2025-04-11 12:37:30,910 base_handler Disconnecting client due to too-large message size (1195725856 bytes): ('127.0.0.1', 33954)
+INFO 2025-04-11 12:59:05,883 daemon Exiting due to SIGINT

@@ -30,9 +30,9 @@ tmp.json
 language_voj.json
 /static./
 /staticfiles
+/vnojsite/*
 backup*.json
 custom_script_*
-websocket/config.js
 node_modules/
 db.json
 tmp.sh

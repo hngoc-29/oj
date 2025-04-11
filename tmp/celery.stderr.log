@@ -6,15 +6,109 @@ Please specify a different user using the --uid option.
 User information: uid=0 euid=0 gid=0 egid=0
 
   warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
-WARNING 2025-04-11 11:34:25,393 warnings /workspaces/oj/vnojsite/lib/python3.12/site-packages/celery/app/utils.py:203: CDeprecationWarning: 
+WARNING 2025-04-11 13:43:55,425 warnings /workspaces/oj/vnojsite/lib/python3.12/site-packages/celery/app/utils.py:203: CDeprecationWarning: 
     The 'CELERY_TIMEZONE' setting is deprecated and scheduled for removal in
     version 6.0.0. Use the timezone instead
 
   deprecated.warn(description=f'The {setting!r} setting',
 
-WARNING 2025-04-11 11:34:25,393 worker Please run `celery upgrade settings path/to/settings.py` to avoid these warnings and to allow a smoother upgrade to Celery 6.0.
-WARNING 2025-04-11 11:34:26,898 warnings /workspaces/oj/vnojsite/lib/python3.12/site-packages/celery/app/control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@codespaces-920145.
-Please make sure you give each node a unique nodename using
-the celery worker `-n` option.
-  warnings.warn(DuplicateNodenameWarning(
+WARNING 2025-04-11 13:43:55,425 worker Please run `celery upgrade settings path/to/settings.py` to avoid these warnings and to allow a smoother upgrade to Celery 6.0.
+ERROR 2025-04-11 13:43:56,221 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 2.00 seconds... (1/100)
+
+ERROR 2025-04-11 13:43:58,233 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 4.00 seconds... (2/100)
+
+ERROR 2025-04-11 13:44:02,243 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 6.00 seconds... (3/100)
+
+ERROR 2025-04-11 13:44:08,248 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 8.00 seconds... (4/100)
+
+ERROR 2025-04-11 13:44:16,262 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 10.00 seconds... (5/100)
+
+ERROR 2025-04-11 13:44:26,267 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 12.00 seconds... (6/100)
+
+ERROR 2025-04-11 13:44:38,276 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 14.00 seconds... (7/100)
+
+ERROR 2025-04-11 13:44:52,297 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 16.00 seconds... (8/100)
+
+ERROR 2025-04-11 13:45:08,317 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 18.00 seconds... (9/100)
+
+ERROR 2025-04-11 13:45:26,340 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 20.00 seconds... (10/100)
+
+ERROR 2025-04-11 13:45:46,359 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 22.00 seconds... (11/100)
+
+ERROR 2025-04-11 13:46:08,374 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 24.00 seconds... (12/100)
+
+ERROR 2025-04-11 13:46:32,398 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 26.00 seconds... (13/100)
+
+ERROR 2025-04-11 13:46:58,422 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 28.00 seconds... (14/100)
+
+ERROR 2025-04-11 13:47:26,435 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 30.00 seconds... (15/100)
+
+ERROR 2025-04-11 13:47:56,464 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+ERROR 2025-04-11 13:48:28,496 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+ERROR 2025-04-11 13:49:00,526 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+/workspaces/oj/vnojsite/lib/python3.12/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+WARNING 2025-04-11 13:49:12,558 warnings /workspaces/oj/vnojsite/lib/python3.12/site-packages/celery/app/utils.py:203: CDeprecationWarning: 
+    The 'CELERY_TIMEZONE' setting is deprecated and scheduled for removal in
+    version 6.0.0. Use the timezone instead
+
+  deprecated.warn(description=f'The {setting!r} setting',
+
+WARNING 2025-04-11 13:49:12,558 worker Please run `celery upgrade settings path/to/settings.py` to avoid these warnings and to allow a smoother upgrade to Celery 6.0.
+ERROR 2025-04-11 13:49:12,920 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 2.00 seconds... (1/100)
+
+ERROR 2025-04-11 13:49:14,921 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 4.00 seconds... (2/100)
+
+ERROR 2025-04-11 13:49:18,925 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 6.00 seconds... (3/100)
+
+ERROR 2025-04-11 13:49:24,932 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 8.00 seconds... (4/100)
+
+ERROR 2025-04-11 13:49:32,556 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+ERROR 2025-04-11 13:49:32,940 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 10.00 seconds... (5/100)
+
+ERROR 2025-04-11 13:49:42,946 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 12.00 seconds... (6/100)
+
+ERROR 2025-04-11 13:49:54,961 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 14.00 seconds... (7/100)
+
+ERROR 2025-04-11 13:50:04,576 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+ERROR 2025-04-11 13:50:08,979 consumer consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 16.00 seconds... (8/100)
 
